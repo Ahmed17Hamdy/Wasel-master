@@ -10,11 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace Wasel.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
+    public partial class ReisterPage : ContentPage
     {
-        public LoginPage()
+        public ReisterPage()
         {
             InitializeComponent();
         }
+
+      
     }
 }

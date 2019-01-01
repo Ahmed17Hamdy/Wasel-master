@@ -1,4 +1,5 @@
 ﻿using System;
+using Wasel.View;
 using Wasel.View.HomePage;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace Wasel
         {
             InitializeComponent();
 
-            MainPage = new MenuPage();
+            MainPage = new  NavigationPage( new ReisterPage());
         }
 
         protected override void OnStart()

@@ -1,8 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:Wasel.ViewModel"
              x:Class="Wasel.View.LoginPage">
+    <ContentPage.BindingContext>
+        <ViewModels:LoginViewModel>
+          
+        </ViewModels:LoginViewModel>
+        
+    </ContentPage.BindingContext>
     <ContentPage.Content>
+        
         <StackLayout  Orientation="Vertical"
                   VerticalOptions="Center"
                   Spacing="10" 
@@ -12,6 +20,7 @@
 
 
             <Entry  IsTextPredictionEnabled="True" 
+                    Text="{Binding }"
                 Keyboard="Numeric"
                 Placeholder="رقم الجوال"
                 FontSize="Micro" />
@@ -24,7 +33,8 @@
                 FontSize="Micro"/>
 
             <Label Text="هل نسيت كلمة المرور ؟" FontSize="Small" />
-            <Button Text="تسجيل الدخول" 
+            <Button Text="تسجيل الدخول"
+                    Command="{Binding LoginCommand}"
                 BackgroundColor="OrangeRed"
                 Padding="10"
                 Margin="10" 

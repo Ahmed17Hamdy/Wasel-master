@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:Wasel.ViewModel"
+             x:Class="Wasel.View.RegisterPage">
+    <ContentPage.BindingContext>
+        <ViewModels:RegisterViewModel>
+
+        </ViewModels:RegisterViewModel>
+
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            
+      
+        <Entry Text="{Binding Email}" />
+        <Entry Text="{Binding PassWord }"/>
+            <Button Command="{Binding RegisterCommand}" Text="Register" />
+            <Label Text="{Binding Message}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
