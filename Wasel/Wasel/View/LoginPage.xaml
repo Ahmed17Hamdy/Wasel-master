@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wasel.View.LoginPage">
+    <ContentPage.Content>
+        <StackLayout  Orientation="Vertical"
+                  VerticalOptions="Center"
+                  Spacing="10" 
+                  Padding="20"
+                  Margin="10">
+            <!-- Place new controls here -->
+
+
+            <Entry  IsTextPredictionEnabled="True" 
+                Keyboard="Numeric"
+                Placeholder="رقم الجوال"
+                FontSize="Micro" />
+            <Entry  IsTextPredictionEnabled="True"
+                Placeholder="البريد الإلكترونى"
+                FontSize="Micro" />
+            <Entry  IsTextPredictionEnabled="True"
+                IsPassword="True"
+                Placeholder="كلمة المرور" 
+                FontSize="Micro"/>
+
+            <Label Text="هل نسيت كلمة المرور ؟" FontSize="Small" />
+            <Button Text="تسجيل الدخول" 
+                BackgroundColor="OrangeRed"
+                Padding="10"
+                Margin="10" 
+                FontSize="Micro" TextColor="White"
+                BorderRadius="10" 
+                HeightRequest="40"
+                WidthRequest="110"/>
+            <Label Text="لم تُسجل بعد ,  "/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

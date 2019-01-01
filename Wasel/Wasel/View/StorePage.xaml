@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:Wasel.ViewModel"
+             x:Class="Wasel.View.StorePage">
+    <ContentPage.BindingContext>
+        <viewmodel:StoreItemViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <ListView x:Name="list" ItemsSource="{Binding Items}" HasUnevenRows="True" Grid.Row="0">
+            <ListView.Header>
+                <ListView HeightRequest="200" ItemsSource="{Binding GetItemType}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ScrollView>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Button Text="{Binding TitleType}"/>
+                                </Grid>
+                            </ScrollView>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ListView.Header>
+        </ListView>
+
+
+    </Grid>
+    
+</ContentPage>
