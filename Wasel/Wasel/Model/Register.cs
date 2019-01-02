@@ -4,16 +4,16 @@ using System.Text;
 
 namespace Wasel.Model
 {
-    public class Register
+    public  class Register
     {
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string PassWord { get; set; }
-        public string Confirmpassfirebase_token { get; set; }
-        public string Device_id { get; set; }
-        public string Country { get; set; }
-        public string Phone { get; set; }   
-
+        public string  name { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public string confirmpass { get; set; }
+        public string firebase_token { get; set; }
+        public string device_id { get; set; }
+        public string country { get; set; }
+        public string phone { get; set; }
 
     }
 }

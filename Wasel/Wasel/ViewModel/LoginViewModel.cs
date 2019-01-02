@@ -10,7 +10,7 @@ namespace Wasel.ViewModel
 {
    public  class LoginViewModel
     {
-        private  ApiServices _apiServices = new ApiServices();
+        private  readonly ApiServices _apiservice = new ApiServices();
         public string Email { get; set; }
         public string  PassWord { get; set; }
         public string FireBase { get; set; }
@@ -22,7 +22,7 @@ namespace Wasel.ViewModel
             {
                 return new Command(async ()=>
                 {
-                  await  _apiServices.LoginAsync(PhoneNumber , Email, PassWord ,FireBase, DeviceId );
+                  await _apiservice.LoginAsync(PhoneNumber , Email, PassWord ,FireBase, DeviceId );
                 } );
             }
         }

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wasel.View.Login">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Grid.Row="0" Aspect="AspectFit" Source="logo.jpg" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <StackLayout  Padding="20,0,20,0" Grid.Row="1" VerticalOptions="Start">
+            <!-- Place new controls here -->
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="smartphone.png" Aspect="AspectFit" Opacity=".4"/>
+                    <Entry Keyboard="Numeric" Placeholder="رقم الجوال" PlaceholderColor="LightGray"  HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="mail.png" Aspect="AspectFit" Opacity=".4"/>
+                    <Entry Placeholder="البريد الإلكترونى" PlaceholderColor="LightGray"  HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="downArrow.png" Aspect="AspectFit" Opacity=".4"/>
+                    <Entry IsPassword="True" Placeholder="كلمة المرور" PlaceholderColor="LightGray"  HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <Label Text="هل نسيت كلمة المرور ؟">
+
+                </Label>
+
+                <Button Text="تسجيل الدخول" BackgroundColor="OrangeRed" Padding="10" Margin="10" TextColor="White" BorderRadius="10" HeightRequest="40" WidthRequest="110"/>
+                <StackLayout Orientation="Horizontal" FlowDirection="RightToLeft" HorizontalOptions="Center">
+                    <Label Text="ليس لديك حساب" TextColor="Gray" Opacity="0.4" HorizontalOptions="Start" Margin="0,0,0,20"/>
+                    <Label Text="سجل الآن" FontSize="Medium" TextColor="#FF4500" HorizontalOptions="Center" FontAttributes="Bold">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        <!--Splash Image-->
+        <Grid x:Name="SplashGrid" HorizontalOptions="Center" VerticalOptions="Center">
+            <Image x:Name="SplashImg" Source="icon.png" Aspect="AspectFit"/>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Syncfusion.ListView.XForms.iOS;
 using UIKit;
 
 namespace Wasel.iOS
@@ -23,6 +24,7 @@ namespace Wasel.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            SfListViewRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

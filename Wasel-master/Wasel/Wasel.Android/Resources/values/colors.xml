@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="launcher_background">#FEDC3D </color>
+  <color name="colorPrimary">#F9F9F9 </color>
+  <color name="colorPrimaryDark">#FEDC3D </color>
+  <color name="colorAccent">#FEDC3D </color>
+</resources>

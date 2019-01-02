@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" FlowDirection="LeftToRight"
+             x:Class="Wasel.View.RecervePages.ReceveTicketPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Grid.Row="0" Aspect="AspectFill" Source="icon.png" HorizontalOptions="Center" VerticalOptions="End"/>
+        <StackLayout Padding="40,0,40,0" Grid.Row="1" VerticalOptions="Start">
+            <StackLayout >
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="" Aspect="AspectFit"/>
+                    <Entry Placeholder="الأســـــــم" x:Name="firstname"  HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="" Aspect="AspectFit"/>
+                    <Entry Placeholder="الأســـــــم" x:Name="Name"  HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="" Aspect="AspectFit"/>
+                    <Entry Placeholder="رقم الجوال" x:Name="Phone"  HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="" Aspect="AspectFit"/>
+                    <DatePicker MinimumDate="01/01/2019" x:Name="DatePick"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="" Aspect="AspectFit"/>
+                    <Editor Placeholder="رقم الجوال" x:Name="Editor"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <Button Text="إرسال شكوى"  BackgroundColor="#FF4500" BorderRadius="20" TextColor="White" HorizontalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                    <StackLayout>
+                        <Image Source="" Aspect="AspectFit"/>
+                        <Label Text="أضف صورة"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="" Aspect="AspectFit"/>
+                        <Label Text="أضف صورة"/>
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+
+</ContentPage>

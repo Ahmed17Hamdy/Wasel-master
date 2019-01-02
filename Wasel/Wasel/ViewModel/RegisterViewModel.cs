@@ -9,11 +9,18 @@ namespace Wasel.ViewModel
 {
   public  class RegisterViewModel
     {
-        ApiServices _apiServices = new ApiServices();
+       private  readonly ApiServices  _apiservices = new ApiServices();
 
-        public string PhoneNumber { get; set; }
-        public string  Email { get; set; }
-        public string  PassWord { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public string confirmpass { get; set; }
+        public string firebase_token { get; set; }
+        public string device_id { get; set; }
+        public string country { get; set; }
+        public string phone { get; set; }
+
+
         public string  Message { get; set; }
 
         public ICommand RegisterCommand
@@ -22,11 +29,11 @@ namespace Wasel.ViewModel
             {
                 return new Command(async ()=>
                     {
-                     var isSuccess =   await _apiServices.RegisterAsync(PhoneNumber, Email, PassWord);
-                        if (isSuccess)
-                            Message = "Registered Successfully";
-                        else
-                            Message = "Retry Later";
+                     var isSuccess =   await _apiservices.RegisterAsync(
+                         name, 
+                         email , password , confirmpass ,
+                         firebase_token ,device_id , country ,phone );
+                       
                     });
 
             }

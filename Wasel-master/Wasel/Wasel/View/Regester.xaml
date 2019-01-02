@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wasel.View.Regester">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image" Grid.Row="0" Aspect="AspectFit" Source="icon.jpg" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <StackLayout Padding="20,0,20,0" Grid.Row="1" VerticalOptions="Start">
+            <StackLayout >
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="user.png" Aspect="AspectFit"/>
+                    <Entry Placeholder="الأســـــــم" x:Name="EntryName" PlaceholderColor="LightGray"  HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="smartphone.png" Aspect="AspectFit"/>
+                    <Entry Keyboard="Numeric" Placeholder="رقم الجوال" x:Name="EntryPhone" PlaceholderColor="LightGray" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="mail.png" Aspect="AspectFit"/>
+                    <Entry Placeholder="البريد الإلكترونى" x:Name="EntryEmail" PlaceholderColor="LightGray" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="downArrow.png" Aspect="AspectFit"/>
+                    <Entry Keyboard="Numeric"  Placeholder="البلد" x:Name="EntryCountry" PlaceholderColor="LightGray" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="lock.png" Aspect="AspectFit"/>
+                    <Entry Placeholder=" كلمة المرور" IsPassword="True" PlaceholderColor="LightGray" x:Name="EntryPassword" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="lock.png" Aspect="AspectFit"/>
+                    <Entry Placeholder=" تأكيد كلمة المرور" IsPassword="True" PlaceholderColor="LightGray" x:Name="ConfirmPassword" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <Button Text="تسجيل" x:Name="regbtn"  BackgroundColor="OrangeRed" Padding="10" Margin="10" TextColor="White" BorderRadius="10" HeightRequest="40" WidthRequest="110" Clicked="Regbtn_Clicked"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" FlowDirection="RightToLeft" >
+                    <Label Text="لديك حساب بالفعل" TextColor="Gray" HorizontalOptions="End" Margin="0,0,0,20"/>
+                    <Label Text="تسجيل الدخول" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Start" TextColor="OrangeRed">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

@@ -32,22 +32,26 @@ namespace Wasel.RestClient
 
         }
 
-        public async Task <bool> RegisterAsync(string phoneNumber, string email, string PassWord)
+        public async Task <string> RegisterAsync( 
+            string name, string email , string password , string confirmpass ,
+            string firebase_token , string device_id , string country , string phone )
         {
             var client = new HttpClient();
             var model = new Register
             {
-                Phone = phoneNumber , 
-                Email = email ,
-            PassWord = PassWord 
-
-            
+                name  = name  , 
+                email = email ,
+            password  = password  ,
+            confirmpass = confirmpass ,
+            firebase_token = firebase_token  ,
+            country = country ,
+            phone = phone 
             };
             var json = JsonConvert.SerializeObject(model);
             HttpContent content = new StringContent(json);
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
        var response =   await   client.PostAsync("http://wassel.alsalil.net/api/register " , content);
-            return response.IsSuccessStatusCode;
+            return await response.Content.ReadAsStringAsync();
         }
     }
 }

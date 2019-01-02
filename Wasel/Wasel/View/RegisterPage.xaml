@@ -13,10 +13,17 @@
         <StackLayout Orientation="Vertical">
             
       
-        <Entry Text="{Binding Email}" />
-        <Entry Text="{Binding PassWord }"/>
+        <Entry Text="{Binding name}" />
+        <Entry Text="{Binding  email  }"/>
+            <Entry Text="{Binding  password }" />
+            <Entry Text="{Binding  confirmpass}" />
+            <Entry Text="{Binding   firebase_token }" />
+            <Entry Text="{Binding  device_id }" />
+            <Entry Text="{Binding  country   }" />
+            <Entry Text="{Binding   phone    }" />
+
             <Button Command="{Binding RegisterCommand}" Text="Register" />
-            <Label Text="{Binding Message}" />
+            <Label Text="{Binding Message}" BackgroundColor="Red" TextColor="Black" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

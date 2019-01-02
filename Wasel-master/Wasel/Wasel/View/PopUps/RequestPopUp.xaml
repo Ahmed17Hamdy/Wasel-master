@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Wasel.View.PopUps.RequestPopUp">
+    <StackLayout Margin="12" Padding="24" Spacing="24" BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout>
+            <Label x:Name="LblSuc"/>
+            <Label x:Name="LblData"/>
+            <Label x:Name="LblMessage"/>
+            <Button BackgroundColor="OrangeRed" Clicked="Button_Clicked" Text="Ok"/>
+        </StackLayout>
+    </StackLayout>
+    
+</pages:PopupPage>

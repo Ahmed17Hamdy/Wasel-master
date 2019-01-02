@@ -133,6 +133,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <AndroidResource Include="Next.png" />
     <Content Include="Properties\Default.rd.xml" />
+    <AndroidResource Include="round_account_circle_white_48.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -148,8 +149,11 @@
     <PackageReference Include="RestClient">
       <Version>2.4.1.9</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView">
+      <Version>16.4.0.44</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Wasel\Wasel.csproj">
