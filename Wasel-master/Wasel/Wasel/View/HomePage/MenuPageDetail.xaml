@@ -1,9 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Wasel.View.HomePage.MenuPageDetail" FlowDirection="RightToLeft" Title="Detail"
+             x:Class="Wasel.View.HomePage.MenuPageDetail" FlowDirection="RightToLeft" Title= "الرئيسية"
              >
-  <StackLayout Padding="10">
-    <Label Text="This is a detail page. To get the 'triple' line icon on each platform add a icon to each platform and update the 'Master' page with an Icon that references it."/>
-  </StackLayout>
+    <ContentPage.Content>
+        
+        <Grid  Padding="10,10,10,10" Margin="10,10,10,10" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label  Text="إختر الخدمات" HorizontalTextAlignment="Center"  Grid.Row="0" Grid.ColumnSpan="2"/>
+            <Grid  Grid.Row="1" Grid.Column="0" >
+                
+                <Image Aspect="Fill"  Source="Reserve.PNG" Opacity="0.5"  />
+                
+                  <Image    Source="Reserve.PNG"/>
+                  <Label VerticalOptions="Center"
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center"
+                       Text="حجز وإيجار الشقق" TextColor="White" FontSize="Small"/>
+              
+            </Grid>    
+            <ImageButton Grid.Row="1" Grid.Column="1" Opacity="0.5" Source="Reserve.PNG" />
+            <ImageButton Grid.Row="2" Grid.Column="0" Opacity="0.5" Source="Capture.PNG" />
+            <ImageButton Grid.Row="2" Grid.Column="1" Opacity="0.5" Source="Capture.PNG" />
+            <ImageButton   Grid.Row="3" Grid.ColumnSpan="2" Opacity="0.5" Source="Capture.PNG" Aspect="Fill" 
+                           />
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

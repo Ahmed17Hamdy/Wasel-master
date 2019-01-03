@@ -14,7 +14,7 @@ namespace Wasel
         {
             InitializeComponent();
 
-            MainPage = new RecoverPage();
+            MainPage = new NavigationPage( new  MenuPageDetail());
         }
 
         protected override void OnStart()

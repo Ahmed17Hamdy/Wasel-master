@@ -178,4 +178,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\Capture.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Forgot.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Confirmcode.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Reserve.PNG" />
+  </ItemGroup>
 </Project>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" FlowDirection="RightToLeft"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" FlowDirection="RightToLeft" 
                   xmlns:pages="clr-namespace:Wasel.View.HomePage"
-                  x:Class="Wasel.View.HomePage.MenuPage" 
-             >
+                  x:Class="Wasel.View.HomePage.MenuPage " 
+           >
   <MasterDetailPage.Master>
     <pages:MenuPageMaster x:Name="MasterPage" />
   </MasterDetailPage.Master>

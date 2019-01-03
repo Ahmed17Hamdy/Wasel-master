@@ -136,8 +136,11 @@
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
+    <Content Include="Confirmcode.PNG" />
+    <Content Include="Forgot.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <AndroidResource Include="Recover.PNG" />
+    <Content Include="Reserve.PNG" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
