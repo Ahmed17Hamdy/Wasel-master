@@ -157,6 +157,9 @@
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>1.1.5.180</Version>
     </PackageReference>
+    <PackageReference Include="Xam.Plugin.Geolocator">
+      <Version>4.5.0.6</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
     <PackageReference Include="Xamarin.Forms.Maps">
       <Version>3.4.0.1008975</Version>
@@ -168,5 +171,11 @@
       <Project>{C343B552-3B48-4B94-AD8E-32385922E04F}</Project>
       <Name>Wasel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Recover.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Capture.PNG" />
   </ItemGroup>
 </Project>

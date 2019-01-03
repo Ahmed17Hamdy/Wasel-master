@@ -15,6 +15,7 @@ namespace Wasel.View
         public Location()
         {
             InitializeComponent();
+
         }
     }
 }

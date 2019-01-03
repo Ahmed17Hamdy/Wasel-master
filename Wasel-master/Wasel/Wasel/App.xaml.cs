@@ -1,6 +1,7 @@
 ﻿using System;
 using Wasel.View;
 using Wasel.View.HomePage;
+using Wasel.View.RecervePages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +14,7 @@ namespace Wasel
         {
             InitializeComponent();
 
-            MainPage = new Location();
+            MainPage = new RecoverPage();
         }
 
         protected override void OnStart()

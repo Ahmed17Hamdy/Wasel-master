@@ -5,6 +5,6 @@
               xmlns:maps="clr-namespace:XWasel.Maps;assembly=Xamarin.Forms.Maps"
              xmlns:maps1="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
     <ContentPage.Content>
-        <maps1:Map  x:Name="Map" HasZoomEnabled="True" HasScrollEnabled="True" MapType="Hybrid"    />
+        <maps1:Map  x:Name="Map" HasZoomEnabled="True" HasScrollEnabled="True" MapType="Hybrid" IsShowingUser="True" />
     </ContentPage.Content>
 </ContentPage>
